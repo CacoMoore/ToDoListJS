@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>To Do List</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,15 +14,37 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+      <h1 class="mt-5">TO DO LIST</h1>
+      <img
+        src="https://media.istockphoto.com/id/1173780504/vector/to-do-list.jpg?s=612x612&w=0&k=20&c=v9CFBAPGBYqEZnu8Hn1ZNIuIHlk-RBj-OtMpB8WfbP4="
+      />
+      <div></div>
+      <p class="alert alert-success mt-4 container-fluid text-center">
+        <b>Add</b> your task. Double click to <b>delete</b> them.
       </p>
+      <div class="container">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form form-control"
+            id="inputfield"
+            placeholder="Add you task"
+            aria-label="Add you task"
+            aria-describedby="addToDo"
+          />
+          <button class="btn btn-outline-primary" type="button" id="addToDo">
+            <b>+</b>
+          </button>
+        </div>
+        <ol
+          class="list-group text-start fs-6 ps-3 fw-bold "
+          id="to-do-list"
+        ></ol>
+      </div>
+
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        <a href="https://github.com/CacoMoore">Carolina Moore</a>
       </div>
     </div>
   </body>
